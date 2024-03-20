@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!-- lang="en" specifies English as the primary language. -->
+<html lang="en">
+
+<!-- Head tag started here -->
+
+<head>
+
+    <!-- <meta charset="UTF-8"> tag is a metadata element used to specify the character encoding for an HTML document -->
+    <meta charset="UTF-8">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> tag is another important meta tag commonly used in HTML documents, especially for responsive web design. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  <title> tag is used to define the title of the HTML document, which is displayed in the title bar or tab of the web browser when the page is loaded.  -->
+    <title>Innovate Hub</title>
+
+    <!-- import boostrap css using cdn link from the official documentation of bootstrap page -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- import boostrap js using cdn link from the official documentation of bootstrap page -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- import boostrap icons using cdn link from the official documentation of bootstrap page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- import plain css of our page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- body tag started here -->
+
+<body>
+
+    <!-- Conatiner tag of our page -->
+    <div class="container-fluid p-0">
+        <!-- layout of sidebar and content to the right side -->
+        <div class="row g-0">
+            <div class="col-md-3 p-3">
+                <!-- Sidebar code start here -->
+                <div class="outline side-bar">
+                    <!-- Logo Area -->
+                    <div class="row g-0">
+                        <div class="col-md-2 d-flex justify-content-start align-items-center">
+                            <img src="./images/company-logo.avif" alt="company-logo" class="company-logo">
+                        </div>
+                        <div class="col-md-8 d-flex flex-column justify-content-center align-items-start">
+                            <p class="m-0 text-secondary">INC</p>
+                            <p class="m-0 fw-bold">Innovate Hub</p>
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-end align-items-center">
+                            <img src="./images/profile-image.jpg" alt="profile-image" class="profile-image">
+                        </div>
+                    </div>
+
+                    <!-- Team Menu -->
+                    <div class="team-menu">
+                        <div class="row g-0 p-3">
+                            <div class="col-md-1">
+                                <i class="bi bi-vector-pen"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="fw-semibold">Design Team</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="command">
+                                    <i class="bi bi-command"></i>
+                                    <p>+1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 p-3 active-team-menu">
+                            <div class="col-md-1">
+                                <i class="bi bi-megaphone"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="fw-semibold">Marketing Team</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="command">
+                                    <i class="bi bi-command"></i>
+                                    <p>+2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 p-3">
+                            <div class="col-md-1">
+                                <i class="bi bi-code"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <p class="fw-semibold">Development Team</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="command">
+                                    <i class="bi bi-command"></i>
+                                    <p>+1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row g-0 p-3">
+                            <div class="col-md-1">
+                                <i class="bi bi-plus-square"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <p>Create Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Folders -->
+                    <div class="row g-0 p-3">
+                        <div class="col-md-11">
+                            <p class="m-0 text-secondary fw-semibold">Folders</p>
+                        </div>
+                        <div class="col-md-1">
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-folder"></i>
+                                    <span class="ms-2">Products</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="m-0">Roadmap</p>
+                                    <p class="m-0">Feedback</p>
+                                    <p class="m-0">Performance</p>
+                                    <p class="m-0">Team</p>
+                                    <p class="m-0">Analytics</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="bi bi-folder"></i>
+                                    <span class="ms-2">Sales</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="bi bi-folder"></i>
+                                    <span class="ms-2">Design</span>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="bi bi-folder"></i>
+                                    <span class="ms-2">Office</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="bi bi-folder"></i>
+                                    <span class="ms-2">Legal</span>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sidebar footer -->
+                    <div class="side-bar-footer">
+                        <div class="row g-0 p-2">
+                            <div class="col-md-1">
+                                <i class="bi bi-person-plus"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <p>Invite teammates</p>
+                            </div>
+                        </div>
+                        <div class="row g-0 p-2">
+                            <div class="col-md-1">
+                                <i class="bi bi-question-circle"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <p>Help and first steps</p>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="command">
+                                    <p>0/6</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 p-2 trial-section mb-2">
+                            <div class="col-md-1 d-flex justify-content-start align-items-center">
+                                <p class="bg-white p-1 rounded">7</p>
+                            </div>
+                            <div class="col-md-7 d-flex justify-content-start align-items-center">
+                                <p>days left on trial</p>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-end align-items-center">
+                                <button class="btn btn-dark">Add billing</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 ps-0 p-3">
+                <!-- Main content code start here -->
+                <div class="outline position-relative">
+                    <!-- Heder in content area with title and search feature -->
+                    <div class="row g-0 p-3">
+                        <div class="col-md-2">
+                            <!-- title -->
+                            <p class="m-0 fw-bold">Products</p>
+                        </div>
+                        <div class="col-md-10 d-flex justify-content-end align-items-center gap-2">
+                            <!-- search section -->
+                            <div class="search-section">
+                                <i class="bi bi-search" onclick="search()"></i>
+                                <input type="search" id="searchInput" placeholder="Search for ..."
+                                    onkeydown="handleKeyDown(event)">
+                            </div>
+                            <!-- chat icon in header -->
+                            <p class="icon"><i class="bi bi-chat-left"></i></p>
+                            <!-- setting icon in header -->
+                            <p class="icon"><i class="bi bi-gear"></i></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- after header menu bar -->
+                    <div class="row g-0 p-3">
+                        <div class="col d-flex justify-content-start align-items-center gap-2">
+                            <div class="dropdown icon p-0">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-command"></i>
+                                    All Brands
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown icon p-0">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-command"></i>
+                                    Desk
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown icon p-0">
+                                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-command"></i>
+                                    Tags
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center gap-2 p-2">
+                                <i class="bi bi-sort-numeric-down"></i>
+                                <p class="m-0 text-secondary">Sort</p>
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center gap-2 p-2">
+                                <i class="bi bi-filter-left"></i>
+                                <p class="m-0 text-secondary">Filter</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-end align-items-center gap-2">
+                            <div class="icon d-flex justify-content-center align-items-center gap-2 p-2">
+                                <i class="bi bi-plus-square"></i>
+                                <p class="m-0">Meeting</p>
+                            </div>
+                            <div class="icon d-flex justify-content-center align-items-center gap-2 p-2">
+                                <i class="bi bi-box-arrow-down"></i>
+                                <p class="m-0">Import/Export</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table Data -->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="row g-0">
+                                        <div class="col-md-2 d-flex justify-content-center align-items-center p-2">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="col-md-8 d-flex justify-content-start align-items-center p-2">
+                                            <p class="m-0">Brand</p>
+                                        </div>
+                                        <div class="col-md-2 d-flex justify-content-center align-items-center p-2">
+                                            <i class="bi bi-plus-lg"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>Description</th>
+                                <th>Members</th>
+                                <th>Categories</th>
+                                <th>Tags</th>
+                                <th>Next Meetings</th>
+                                <th>
+                                    <i class="bi bi-plus-lg"></i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Table body is rendered from javascript file -->
+                        </tbody>
+                    </table>
+
+                    <!-- Overflow Menu -->
+                    <div class="overflow-menu">
+                        <!-- using id slected count is rendered from javascript file -->
+                        <button class="btn btn-dark" id="selected-count">3</button>
+                        <p class="m-0">selected</p>
+                        <div class="icon d-flex justify-content-center align-items-center gap-2 p-2">
+                            <i class="bi bi-archive"></i>
+                            <p class="m-0">Archive</p>
+                        </div>
+                        <div class="icon d-flex justify-content-center align-items-center gap-2 p-2 text-danger">
+                            <i class="bi bi-trash"></i>
+                            <p class="m-0">Delete</p>
+                        </div>
+                        <div class="dropdown icon p-0">
+                            <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                More
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <p class="text-secondary m-0">
+                            <i class="bi bi-x-lg"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- added our javascript to the page -->
+        <script src="./index.js"></script>
+</body>
+
+</html>

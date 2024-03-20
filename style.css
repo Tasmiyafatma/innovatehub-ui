@@ -1,0 +1,176 @@
+/* For applying to the whole page */
+* {
+  padding: 0;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* For outlining the layout */
+.outline {
+  height: 96vh;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border-radius: 8px;
+}
+
+/* Adding specific style to side-bar */
+.side-bar {
+  padding: 10px;
+  position: relative;
+}
+
+/* in side-bar header compmnay logo */
+.company-logo {
+  width: 80%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* in side-bar header profile image */
+.profile-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* in side-bar team menu area */
+.team-menu {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.team-menu p {
+  margin: 0;
+  font-weight: 500;
+}
+
+hr {
+  opacity: 0.1;
+  margin: 0;
+}
+
+.active-team-menu {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.active-team-menu .command {
+    background-color: rgba(255, 255, 255);
+}
+
+/* insde team menu command option */
+.command {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+}
+
+.command p {
+  margin: 0;
+}
+
+/* to chnage bootstrap default accordian style */
+.accordion-item {
+  border: none;
+  font-weight: 500;
+}
+
+.accordion-button {
+  padding: 10px;
+}
+
+/* side bar footer to keep it always in bottom */
+.side-bar-footer {
+  width: 96%;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+
+.side-bar-footer p {
+  margin: 0;
+}
+
+/* in the footer trial section */
+.trial-section {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* content area search section */
+.search-section {
+  border-radius: 8px;
+  padding: 2px 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.search-section input {
+  border: none;
+  outline: none;
+}
+
+.icon {
+  border-radius: 8px;
+  margin: 0;
+  padding: 2px 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* Overflow menu icon in bottom center of the page */
+.overflow-menu {
+  width: 40%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* bootstrap style override to make it look alike the given ui */
+.btn-light {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* to make inside table data scrollable horizonatlly */
+.scroll-context {
+  max-width: 200px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* inside table for logo of companies */
+.logo-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* inside table for members profile images */
+.members-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
