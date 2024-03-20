@@ -91,6 +91,7 @@ hr {
   position: absolute;
   left: 10px;
   bottom: 0;
+  background-color: #ffffff;
 }
 
 .side-bar-footer p {
@@ -173,4 +174,12 @@ hr {
   height: 30px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.table>:not(caption)>*>* {
+  padding: 0.3rem;
+}
+
+td {
+  vertical-align: middle;
 }
