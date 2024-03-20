@@ -8,7 +8,7 @@ interactivity.
 
 To run this project locally, follow these steps:
 
-1. Clone this repository to your local machine using Git. [Open Link](https://github.com/TasmiyaZ/innovate-hub-ui.git)
+1. Clone this repository to your local machine using Git. [Open Link](https://github.com/Tasmiyafatma/innovatehub-ui)
 2. Open the project in Visual Studio Code.
 
 3. Install the Live Server extension if you haven't already.
